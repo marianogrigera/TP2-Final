@@ -1,8 +1,8 @@
 import { Router } from "express";
-import Controller from "../controllers/SondaController.js";
+import SondaController from "../controllers/SondaController.js";
 
 const router = Router();
-const controller = new Controller();
+const controller = new SondaController();
 
 router.post('/add', controller.agregarSonda);
 router.get('/listar', controller.listarSondas);

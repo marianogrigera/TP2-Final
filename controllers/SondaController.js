@@ -7,7 +7,7 @@ class SondaController {
 agregarSonda = (req, res) => {
     const { id, temperatura } = req.body;
     try {
-        const data = service.agregarSonda({ id, temperatura });
+        const data = service.agregarSonda( id, temperatura );
         res.status(201).json(data);
     } catch (error) {
         res.status(400).json({ errorMsg: error.message });

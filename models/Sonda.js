@@ -1,6 +1,8 @@
 class Sonda {
     
-    listaSondas = [];
+    constructor() {
+        this.listaSondas = [];
+    }
 
     crearSonda = async (id, temperatura) => {
         this.listaSondas.push(sonda);
@@ -12,7 +14,7 @@ class Sonda {
     };
 
     listarPorId = async () => {
-        return listaSondas.filter(entry => entry.id === id);
+        return this.listaSondas.filter(entry => entry.id === id);
     };
 }
 

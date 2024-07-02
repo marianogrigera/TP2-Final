@@ -4,7 +4,7 @@ const sonda = new Sonda();
 
 class Service {
 
-    agregarSondas = (id, temperatura) => {
+    agregarSonda = (id, temperatura) => {
         const sonda = { id, temperatura };
         validateSonda(sonda);
         return sonda.crearSonda(sonda);
